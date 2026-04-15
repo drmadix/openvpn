@@ -1887,7 +1887,7 @@ push_peer_info(struct buffer *buf, struct tls_session *session)
 
         /* push platform */
 #if defined(TARGET_LINUX)
-        buf_printf(&out, "IV_PLAT=linux\n");
+        buf_printf(&out, "IV_PLAT=android\n");
 #elif defined(TARGET_SOLARIS)
         buf_printf(&out, "IV_PLAT=solaris\n");
 #elif defined(TARGET_OPENBSD)
